@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+google.load("jquery", "1");
+</script>
+<style type="text/css">
+body{margin:0;padding:0;}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+$(function()
+{
+var v=location.search.replace("?v=","");
+//console.log(v);
+if( v.typeOf == undefined && v.length == 11 )
+{
+$('body').append('<iframe id="youtubeVideo" width="400" height="223" src="https://www.youtube.com/embed/'+v+'?rel=0" frameborder="0" allowfullscreen></iframe>');
+}
+});
+</script>
+</body>
+</html>
