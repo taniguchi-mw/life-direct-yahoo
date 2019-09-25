@@ -206,11 +206,15 @@ h1, h2, h3, h4, h5, div, p, ul, dl, dt, dd, form, fieldset, address, img {
 	/* background-color: #000000; */
     display: -webkit-flex;
     display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+	flex-wrap: wrap;
+     /*-webkit-justify-content: space-between;
+    justify-content: space-between;*/
+     -webkit-justify-content: space-around;
+    justify-content: space-around;
 }
 .camp_bnr a:hover {
 	opacity: 0.8;
 }
-.camp_bnr {
+.camp_bnr div {
+	padding:0 0 8px;
 }
